@@ -1,0 +1,94 @@
+/*All Versi*/
+.jumbotron{
+  
+}
+.warna1{
+	background-color: #fff;
+  background-repeat: no-repeat, repeat;
+}
+.putih{
+	color: #fff;
+}
+.biru{
+  background-color: #2874A6;
+  background-repeat: no-repeat, repeat;
+}
+  #display-4{
+    font-size: 32px;
+    margin-top: -430px;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    font-family: 'Roboto', sans-serif;
+  }
+  #display-4::after {
+    content: '';
+    width: 100px;
+    display: block;
+    background: #fff;
+    height: 5px;
+    margin: 15px auto;
+    line-height: 1.1;
+  }
+.transbox{
+  padding-top: 90px;
+}
+
+/*Versi Deksop*/
+@media (min-width: 992px) {
+  .nav-link{
+    color:#fff;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover{
+    border-bottom: 3px solid #1BF921;
+    margin-bottom: -3px;
+  }
+  #particles{
+    margin-top: 10px;
+  }
+  #display-4{
+    font-size: 60px;
+    margin-top: -480px;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 1.5);
+  }
+
+
+
+}
+/*Versi Mobile*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+
+ }
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #0074D9;
+  color: #fff;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+div{
+
+}
+
+
+#particles {
+  background: url('http://arnaudel.perso.neuf.fr/Payekhali/Fonds/1280/AS11-40-5873.jpg') top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*height: 730px;*/
+
+  background: rgba(0,0,0,0.5);
+}
+

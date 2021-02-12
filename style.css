@@ -1,0 +1,235 @@
+.jumbotron{
+  background-image: url(./img/bg1.jpg);
+  background-size: cover;
+}
+.w1 h1{
+  text-shadow: 1px 1px 1px rgba(0,0,0, 2.5);
+}
+.bg2{
+  background-image: url(./img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.bg2 h1{
+  color: white;
+  text-align:center;
+  word-spacing: normal;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 2.5);
+}
+.bg2 .card{
+  font-family: 'Source Sans Pro', sans-serif;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width:250px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 1);
+  opacity: 90%;
+}
+.bg2 .card::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  
+  background: #000080;
+}
+.bg2 .card img{
+  margin-top: 5px;
+  height: 80px ;
+  width: 80px;
+
+}
+.nav-link{
+  font-family: 'Poppins', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:justify; word-spacing: normal;
+}
+.Montserrat{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 1.5);
+}
+.roboto{
+  font-family: 'IBM Plex Serif', serif;
+  color: white;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .nav-link{
+    color: white !important;
+    margin-right: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 1);
+  }
+  .jumbotron{
+    margin-top: -75px;
+    
+  }
+  .bg1{
+    height: 1500px;
+  }
+  .bg2{
+    width: cover;
+    height: 800px;
+  }
+  
+  .bg2 .col{
+    margin-top: -40px;
+  }
+  .bg2 .col-12{
+    margin-top: -70px;
+    margin-bottom: 40px;
+  }
+  .bg2 .a1{
+    margin-left: 203px;
+    margin-top: 20px;
+  }
+  .jumbotron .row {
+    margin-top: 40px;
+  }
+  .icon1{
+    height: 600px;
+    position:absolute;
+  }
+  .icon2{
+    width: 600px;
+    position:absolute;
+    padding-bottom: 200px;
+    padding-right: 200px;
+  }
+  .display-4{
+    margin-top: 160px;
+  }
+  .nav-link:hover::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid #2ECC71   ;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .who{
+    margin-top: 180px;
+    padding-top: 250px;
+    color: white;
+  }
+ }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .icon1{
+    height: 200px;
+    margin-left: -30px;
+  }
+  .icon2{
+    width: 100px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .bg1{
+    width: 400px;
+    height: 500px;
+  }
+
+  .jumbotron h1{
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .jumbotron p{
+    font-size: 8px;
+  }
+  .jumbotron .Montserrat{
+    margin-top: 30px;
+  }
+  .who{
+    padding-top: 30px;
+    color: white;
+    font-size: 8px;
+  }
+  .w1{
+    font-size: 18px;
+  }
+  .bg2{
+    width: 400px;
+    margin-top: -32px;
+    background-size:contain;
+  }
+  .bg2 h1{
+    margin-top: -15px;
+  }
+  .bg2 .card img{
+    height: 20px ;
+    width: 20px;
+  
+  }
+  .bg2 .card{
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  .bg2 .card h4{
+    margin-top: -18px;
+    font-size: 8px;
+  }
+  .bg2 .card p{
+    margin-top: -5px;
+    font-size: 6px;
+  }
+  iframe{
+    width: 360px;
+  }
+}
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
